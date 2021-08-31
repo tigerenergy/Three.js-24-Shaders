@@ -7,6 +7,8 @@
     void main()
     {
         gl_Position = projectionMatrix * viewMatrix * modelMatrix * vec4(position, 1.0);
+        gl_Position.x += 0.5;
+        gl_Position.y += 0.5;
     }
     
   
